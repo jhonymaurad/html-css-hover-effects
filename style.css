@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #eee;
+  width: 80%;
+  height: 10%;
+  margin: 20px auto;
+  display: flex;
+  line-height: 45px;
+}
+
+.menu ul li {
+  width: 100%;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  position: relative;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.menu ul li a::before {
+  content: '';
+  position: absolute;
+  /* top: 0%; */
+  bottom: 0%;
+  left: 0%;
+  background-color: tomato;
+  height: 5px;
+  width: 0%;
+  transition: 2s all;
+}
+.menu ul li a:hover::before {
+  width: 100%;
+  transition: 1s all;
+}
+
+.menu ul li a::after {
+  content: '';
+  position: absolute;
+  /* top: 0%; */
+  top: 0%;
+  left: 0%;
+  background-color: tomato;
+  height: 5px;
+  width: 0%;
+  transition: 2s all;
+}
+.menu ul li a:hover::after {
+  width: 100%;
+  transition: 1s all;
+}
